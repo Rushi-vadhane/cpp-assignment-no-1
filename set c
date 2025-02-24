@@ -1,0 +1,25 @@
+1)
+#include <bits/stdc++.h>
+using namespace std;
+
+
+float sumOfSeries(float num)
+{
+	double res = 0, fact = 1;
+	for (int i = 1; i <= num; i++) {
+
+		fact = fact * i;
+
+		res = res + (i / fact);
+	}
+	return (res);
+}
+
+int main()
+{
+	float n = 5;
+	cout << "Sum: " << sumOfSeries(n);
+
+}
+******************************************************************************
+2)
