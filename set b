@@ -1,0 +1,98 @@
+2)
+#include <iostream> // Including the input/output stream header file
+
+using namespace std; 
+int main() 
+{
+
+    int i, n, sum = 0; 
+    
+	
+
+   
+    cout << "\n\n Find the sum of the series (1*1) + (2*2) + (3*3) + (4*4) + (5*5) + ... + (n*n):\n";
+    cout << "------------------------------------------------------------------------------------\n";
+
+    
+    cout << " Input the value for nth term: ";
+    cin >> n; 
+
+    for (i = 1; i <= n; i++) 
+	{
+        sum += i * i; 
+        cout << i << "*" << i << " = " << i * i << endl; 
+    }
+
+   
+    cout << " The sum of the above series is: " << sum << endl;
+
+   
+}
+*************************************************************************************
+
+3)
+
+#include <iostream>
+using namespace std;
+
+void decToBinary(int n)
+{
+    int binaryNum[32];
+
+    int i = 0;
+    while (n > 0) {
+
+       
+        binaryNum[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+
+    for (int j = i - 1; j >= 0; j--)
+        cout << binaryNum[j];
+}
+
+
+int main()
+{
+    int n = 17;
+    decToBinary(n);
+    return 0;
+}
+***************************************************************************************
+
+4)
+
+
+#include <iostream>
+using namespace std;
+
+
+void tringle(int n)
+{
+ 
+    int i, j, k = n;
+    for (i = 1; i <= n; i++) {
+
+      
+        for (j = 1; j <= n; j++) {
+
+          
+            if (j >= k)
+                cout << "* ";
+            else
+                cout << " ";
+        }
+        k--;
+        cout << "\n";
+    }
+}
+
+
+int main()
+{
+    int n = 5;
+  
+    tringle(n);
+    return 0;
+}
