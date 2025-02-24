@@ -1,0 +1,120 @@
+1)
+#include <iostream> 
+#include <math.h> 
+using namespace std; 
+
+int main() 
+{ 
+	int n, i, flag = 1; 
+
+	cout << "Enter a number: "; 
+	cin >> n; 
+ 
+	for (i = 2; i <= sqrt(n); i++) { 
+		if (n % i == 0) { 
+			flag = 0; 
+			break; 
+		} 
+	} 
+
+	if (n <= 1) 
+		flag = 0; 
+
+	if (flag == 1) { 
+		cout << n << " is a prime number"; 
+	} 
+	else { 
+		cout << n << " is not a prime number"; 
+	} 
+
+
+} 
+
+2)
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int num;
+cout<<"enter to search even or odd:";
+cin>>num;
+    if (num % 2 == 0)
+        cout << "number is Even....";
+
+    else
+        cout << "number is Odd....";
+    return 0;
+}
+
+3)
+#include <iostream> 
+#include <cctype>
+using namespace std; 
+
+int main(){
+    int n,i=1,sum=0;
+    cout << "Enter a number: ";
+    cin >> n;
+       while(i<n){
+       if(n%i==0)
+       sum=sum+i;
+       i++; 
+}
+ 
+if(sum==n)
+    cout << i << " is a perfect number\n"; 
+else
+    cout << i << " is not a perfect number\n";
+    system("pause"); 
+
+return 0;
+}
+
+4)
+#include <iostream> 
+#include <cctype>
+using namespace std; 
+
+int main(){
+    int n,i=1,sum=0;
+    cout << "Enter a number: ";
+    cin >> n;
+       while(i<n){
+       if(n%i==0)
+       sum=sum+i;
+       i++; 
+}
+ 
+if(sum==n)
+    cout << i << " is a perfect number\n"; 
+else
+    cout << i << " is not a perfect number\n";
+    system("pause"); 
+
+return 0;
+}
+
+5)
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    double n1, n2, n3;
+
+    cout << "Enter three numbers: ";
+    cin >> n1 >> n2 >> n3;
+
+    if(n1 >= n2 && n1 >= n3)
+        cout << "Largest number: " << n1;
+
+    else if(n2 >= n1 && n2 >= n3)
+        cout << "Largest number: " << n2;
+    
+    else 
+        cout << "Largest number: " << n3;
+  
+    return 0;
+}
+
